@@ -1,10 +1,14 @@
+//Author: Michelle Gomez
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 //prototypes:
-
+bool isPositive(int); 
+void printVector(const vector<int> &); 
+void fillWith(vector<int> ,int); 
 
 /////DO NOT TOUCH/////
 int main()
@@ -19,6 +23,7 @@ int main()
   cin>>numProjects;
   cout<<"\nHow many quizzes are there? ";
   cin>>numQuizzes;
+  
 
   //only proceed if both numbers are positive
   if( isPositive(numProjects) && isPositive(numQuizzes) )
@@ -28,7 +33,7 @@ int main()
 
     fillWith(projects, 90); // Fills the vector with all value 90s
     fillWith(quizzes, 80); // Fills the vector with all value 80s
-
+  
     cout<<"\nProject Scores:\n";
     printVector(projects); // Prints vector with space after each cell
     cout<<"\n\nQuiz Scores:\n";
@@ -42,3 +47,28 @@ int main()
 }
 
 //function definitions
+bool isPositive(int num) 
+{ 
+   if(num > 0) 
+   {  
+     return true;  
+   }
+   else 
+   {
+     return false; 
+   }
+}
+void printVector(const vector<int>& list)
+{
+    for( int i = 0; i < list.size(); i++)
+    {
+        list[i];
+    } 
+}
+void fillWith (vector<int> results, int)
+{
+    for( int i = 0; i < results.size(); i++) 
+    {
+        results[i]; 
+    }
+}
